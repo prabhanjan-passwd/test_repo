@@ -1,9 +1,0 @@
-1.1.1.1 ansible_user=root ansible_password=redhat
-2.2.2.2 ansible_user=root ansible_password=redhat
-3.3.3.3 ansible_user=root ansible_password=redhat
-
-[mygroup]
-4.4.4.4
-
-[mygroup:vars]
-ansible_user=root ansible_password=redhat
