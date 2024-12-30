@@ -1,6 +1,7 @@
 ---
 - name: testing
-  hosts: all
+  hosts: localhost
+  gather_facts: false
   tasks:
      - name: Add host
        ansible.controller.host:
