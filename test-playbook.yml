@@ -1,0 +1,10 @@
+---
+- name: testing
+  hosts: all
+  tasks:
+     - name: Add host
+       host:
+         name: 1.1.1.1
+         inventory: "test-inv"
+         state: present
+    
