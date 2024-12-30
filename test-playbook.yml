@@ -3,7 +3,7 @@
   hosts: all
   tasks:
      - name: Add host
-       host:
+       ansible.controller.host:
          name: 1.1.1.1
          inventory: "test-inv"
          state: present
