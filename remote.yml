@@ -1,0 +1,14 @@
+---
+- name: testing
+  hosts: localhost
+  gather_facts: false
+  tasks:
+     - name: Add host
+       ansible.controller.host:
+         name: 1.1.1.1
+         inventory: "test-inv"
+         state: present
+         validate_certs: false
+         controller_host: "192.168.122.249"      # Replace x.x.x.x with the IP of controller host 
+         controller_username: "admin"    # Replace with your controller username
+         controller_password: "redhat"   # Replace with your controller password
