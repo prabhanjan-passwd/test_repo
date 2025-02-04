@@ -1,0 +1,13 @@
+- name: Delete a job from Automation Controller using username and password
+  hosts: localhost
+  tasks:
+    - name: Delete a job using Automation Controller API
+      ansible.builtin.uri:
+        url: "http://192.168.122.249/api/v2/jobs/5/"
+        method: DELETE
+        headers:
+          Content-Type: "application/json"
+        user: admin
+        password: redhat
+        force_basic_auth: yes
+        status_code: 204
