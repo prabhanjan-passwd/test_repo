@@ -5,8 +5,6 @@
       ansible.builtin.uri:
         url: "http://192.168.122.249/api/v2/jobs/13/"
         method: DELETE
-        headers:
-          Content-Type: "application/json"
         user: admin
         password: redhat
  
