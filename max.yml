@@ -9,5 +9,4 @@
           Content-Type: "application/json"
         user: admin
         password: redhat
-        force_basic_auth: yes
-        status_code: 204
+ 
