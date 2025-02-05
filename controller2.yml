@@ -11,7 +11,7 @@
          scm_type: git
          scm_url: https://github.com/prabhanjan-passwd/test_repo/
          organization: Default
-         credential: Demo Credential
+         credential: git_cred
          controller_host: "192.168.122.249"      # Replace x.x.x.x with the IP of controller host 
          controller_username: "admin"    # Replace with your controller username
          controller_password: "redhat"   # Replace with your controller password
