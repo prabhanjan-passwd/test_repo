@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   tasks:
-     - name: Job process
+     - name: Add host
        ansible.controller.job_template:
          name: mytestjt
          inventory: "inv1"
@@ -11,14 +11,13 @@
          validate_certs: false
          project: "Demo Project"
          playbook: "hello_world.yml"
-         credential: Demo Credential
-         controller_host: "192.168.122.249"      
-         controller_username: "admin"    
-         controller_password: "redhat"
-         credentials: 
-             - Demo Credential
-             - vault-cred
-         webhook_credential: webhook credential
+         credential: 
+            - Demo Credential
+            - Demo Credential 2
+         webhook_credential: "webhook credential"
+         controller_host: "192.168.122.249"      # Replace x.x.x.x with the IP of controller host 
+         controller_username: "admin"    # Replace with your controller username
+         controller_password: "redhat"   # Replace with your controller password
 
 
 
