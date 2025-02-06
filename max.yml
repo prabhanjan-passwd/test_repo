@@ -10,5 +10,5 @@
         force_basic_auth: yes
         follow_redirects: all
         status_code: 204
-
+        body_format: json
  
