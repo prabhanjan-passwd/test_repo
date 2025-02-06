@@ -18,6 +18,8 @@
          credentials: 
              - Demo Credential
              - vault-cred
+         webhook_credential: webhook credential
+
 
 
          
