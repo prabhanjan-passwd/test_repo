@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: false
   tasks:
-     - name: Add host
+     - name: Job process
        ansible.controller.job_template:
          name: mytestjt
          inventory: "inv1"
@@ -14,5 +14,8 @@
          credential: Demo Credential
          controller_host: "192.168.122.249"      
          controller_username: "admin"    
-         controller_password: "redhat"   
+         controller_password: "redhat"
+         credentials: 
+             - Demo Credential
+             - Demo Credential 2
          
