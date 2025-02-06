@@ -3,7 +3,7 @@
   tasks:
     - name: Delete a job using Automation Controller API
       ansible.builtin.uri:
-        url: "http://192.168.122.249/api/v2/jobs/7"
+        url: "http://192.168.122.249/api/v2/jobs/11"
         method: DELETE
         user: admin
         password: redhat
