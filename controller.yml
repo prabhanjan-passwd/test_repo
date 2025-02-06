@@ -11,9 +11,11 @@
          validate_certs: false
          project: "Demo Project"
          playbook: "hello_world.yml"
-         credential: Demo Credential
+         credential: 
+            - Demo Credential
+            - Demo Credential 2
          webhook_credential: "GitHub PAT"
          controller_host: "192.168.122.249"     
          controller_username: "admin"    
          controller_password: "redhat"   
-         organization: "Default"
+         # organization: "Default"
