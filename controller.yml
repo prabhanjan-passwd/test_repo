@@ -15,3 +15,7 @@
          controller_host: "192.168.122.249"      
          controller_username: "admin"    
          controller_password: "redhat" 
+         webhook_credential: "GitHub PAT"
+         credential: 
+            - Demo Credential
+            - Demo Credential 2
