@@ -3,7 +3,7 @@
   hosts: localhost
   tasks:
        - name: testing inventory
-         export:
+         ansible.controller.export:
            controller_host: 192.168.122.249
            controller_username: admin
            controller_password: redhat
