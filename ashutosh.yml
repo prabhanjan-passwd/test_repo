@@ -1,0 +1,7 @@
+---
+- name: testing playbook
+  hosts: all
+  tasks:
+       - name: testing inventory
+         export:
+           inventory: 'all'
