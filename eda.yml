@@ -5,9 +5,9 @@
        - name: task 1
          ansible.eda.decision_environment:
              name: "EURONEXT QUAY"
-             description: "Image from internal quay"
+             description: "Image from internal test"
              image_url: "registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest"
-             credential: "QUAY"
+             credential: "my-vault"
              organization_name: "org1"
              controller_host: 192.168.122.108
              controller_username: admin
