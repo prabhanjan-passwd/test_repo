@@ -2,6 +2,6 @@
 - name: Playbook to run for 20 seconds
   hosts: localhost
   tasks:
-    - name: Wait for 20 seconds
+    - name: Wait for 50 seconds
       pause:
-        seconds: 20
+        seconds: 50
