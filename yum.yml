@@ -1,0 +1,16 @@
+---
+- name: Simple DNF update playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Actualizacion del sistema operativo
+      ansible.builtin.dnf:
+        name: "*"
+        state: latest
+        security: true
+        use_backend: dnf4
+      register: dnf_out
+
+    - name: Mostrar salida del modulo DNF
+      debug:
+        var: dnf_out
