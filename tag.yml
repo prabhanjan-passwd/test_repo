@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+    - name: Create installer folder
+      file:
+         path: /root/demo
+         state: directory
+      tags: prabhanjantag
+      
