@@ -1,0 +1,38 @@
+---
+- name: Create two workflow job templates with different names
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  collections:
+    - ansible.controller
+
+  tasks:
+
+    - name: Create workflow job template - my-workflow
+      ansible.controller.workflow_job_template:
+        controller_host: https://dhcp230-131.awxlab.pnq2.redhat.com/
+        controller_username: admin
+        controller_password: ansible
+        validate_certs: false
+        name: my-workflow
+        organization: Default
+        inventory: Default
+        project: example-project
+        scm_branch: ""
+        ask_variables_on_launch: true
+        state: present
+
+    - name: Create workflow job template - my-workflow-copy
+      ansible.controller.workflow_job_template:
+        controller_host: https://dhcp230-131.awxlab.pnq2.redhat.com/
+        controller_username: admin
+        controller_password: ansible
+        validate_certs: false
+        name: my-workflow
+        organization: Default
+        inventory: Default
+        project: example-project
+        scm_branch: ""
+        ask_variables_on_launch: true
+        state: present
