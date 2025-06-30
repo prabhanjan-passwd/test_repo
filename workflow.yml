@@ -16,8 +16,7 @@
         validate_certs: false
         name: my-workflow
         organization: Default
-        inventory: Default
-        scm_branch: ""
+        inventory: Demo Inventory
         ask_variables_on_launch: true
         state: present
 
@@ -27,10 +26,9 @@
         controller_username: admin
         controller_password: ansible
         validate_certs: false
-        name: my-workflow-copy
+        name: my-workflow
         organization: Default
-        inventory: Default
-        scm_branch: ""
+        inventory: Demo Inventory
         ask_variables_on_launch: true
         state: present
 
